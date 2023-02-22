@@ -1,0 +1,16 @@
+.nav,
+.nav_links {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px 20px 20px;
+  font-weight: 700;
+  align-items: center;
+
+  &__a {
+    margin-left: 15px;
+  }
+}
+
+.nav {
+  border-bottom: solid 1px #841919;
+}
