@@ -37,6 +37,8 @@ function App() {
   };
 
 
+  console.log(data?.[6])
+
   return (
     <>
       <Nav />
@@ -54,7 +56,11 @@ function App() {
                   key={i}
                   flag={country.flags.png}
                   continent={country.continents}
-                  country={country.altSpellings[1]}
+                  country={
+                    !country.altSpellings[1]
+                      ? country.altSpellings[0]
+                      : country.altSpellings[1]
+                  }
                   link={country.maps.googleMaps}
                 />
               );
